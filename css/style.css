@@ -13528,7 +13528,6 @@ section.section-grey {
 }
 #hero .carousel-item > img {
   position: absolute;
-  opacity: 0.8;
   z-index: -1;
   width: 100%;
 }
