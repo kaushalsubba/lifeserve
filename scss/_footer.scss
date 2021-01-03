@@ -27,6 +27,7 @@
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
+  height: 52px;
 }
 
 #footer .footer-newsletter form input[type="email"] {
@@ -45,14 +46,15 @@
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background: #e96b56;
+  background: $primary-color;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #e6573f;
+  background: darken($primary-color, 10%);
 }
 
 #footer .footer-top {
@@ -78,7 +80,8 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   color: #fff;
 }
 

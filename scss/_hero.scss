@@ -1,33 +1,41 @@
 #hero {
   width: 100%;
   height: 70vh;
-  max-height:600px;
+  max-height: 600px;
   background-color: black;
   overflow: hidden;
   padding: 0;
   margin-bottom: -120px;
   position: relative;
   z-index: 1;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
-#hero .glide__slides {margin:0;}
+#hero .glide__slides {
+  margin: 0;
+}
 
 #hero .carousel-item {
   width: 100%;
   max-width: 100%;
   height: 70vh;
-  max-height:600px;
+  max-height: 600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 
-  &>img{
-      position: absolute;
-      opacity: 0.8;
-      z-index: -1;
-      width:100%;
+  &>img {
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
 }
@@ -43,31 +51,56 @@
 // }
 
 #hero .carousel-container {
-//   display: flex;
-//   align-items:flex-end;
-//   justify-content:flex-start;
-  height:100%;
-//   padding-bottom: 120px;
+  //   display: flex;
+  //   align-items:flex-end;
+  //   justify-content:flex-start;
+  height: 100%;
+  //   padding-bottom: 120px;
+  overflow: hidden;
+  position: relative;
 }
 
 #hero .carousel-content {
-//   text-align: center;
-  max-width: 700px;
-  background: rgba($color: $grey, $alpha: 0.9);
-  clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+  max-width: 1200px;
+  width: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  // clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: circle(50% at 50% 50%);
+  background: linear-gradient(83deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.022846638655462215) 86%, rgba(0, 0, 0, 0) 100%);
+  border-top: 2px solid $primary-color;
+  padding: 100px 250px 50px 150px;
+  height: 100%;
+  color: $dark-grey;
+  float: right;
+  position: absolute;
+  right: -10%;
+  display: flex;
+  align-items: center;
 
-//   background: linear-gradient(83deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.022846638655462215) 86%, rgba(0,0,0,0) 100%);
-
-//   border-top:2px solid $primary-color;
-  padding:100px 250px 50px 150px;
-  height:100%;
-  color:$dark-grey;
-  float:right;
+  @media only screen and (max-width: 768px) {
+    clip-path: none;
+    padding: 0px;
+    right: 0px;
+  }
 }
 
+.main_content {
+  max-width: 550px;
+  margin-left: 15%;
+  color: $white;
+
+  .title {
+    font-size: 32px;
+  }
+
+  .content {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -80,12 +113,12 @@
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid $primary-color;
+  border: 2px solid transparent;
   background: $primary-color;
 }
 
 #hero .btn-get-started:hover {
-  background: transparent;
-  color: $primary-color;
+  background: darken($primary-color, 10%);
+  color: $white;
   text-decoration: none;
 }

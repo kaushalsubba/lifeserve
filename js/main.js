@@ -1,4 +1,6 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
 
@@ -10,6 +12,13 @@ function scrollFunction() {
     }
 }
 
-
-
 new Glide('.glide').mount();
+
+// window.onscroll = function () {
+//     var top = window.pageYOffset || document.documentElement.scrollTop;
+//     if (top > 100) {
+//         document.getElementById('header').classList.add('shrink');
+//     } else {
+//         document.getElementById('header').classList.remove('shrink');
+//     }
+// };

@@ -1,0 +1,40 @@
+/* Mixins */
+@mixin bg-images(
+  $overlay-color: rgba(255, 255, 255, 0.8),
+  $position: center center) {
+
+  animation: bgFadeIn 1s ease-in both;
+  position: relative;
+
+  &:before {
+    background:
+      linear-gradient($overlay-color,
+        $overlay-color),
+      url($image-path);
+    background-color: #CCCCCC;
+    background-attachment: fixed;
+    background-position: $position;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  @keyframes bgFadeIn {
+    0% {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}

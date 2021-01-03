@@ -29,11 +29,17 @@
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
+.services {
+  padding: 80px 0px;
+}
+
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ededed;
+  border: 1px solid $secondary-color;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .services .icon-box .icon {
@@ -101,7 +107,8 @@
   background: #ef9383;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #fff;
 }
 
@@ -127,7 +134,8 @@
   opacity: 1;
 }
 
-.clients .owl-nav, .clients .owl-dots {
+.clients .owl-nav,
+.clients .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -173,7 +181,7 @@
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
@@ -183,7 +191,7 @@
   margin-top: 20px;
   color: #7a7a7a;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -223,7 +231,8 @@
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: white;
   font-size: 26px;
 }
@@ -254,7 +263,7 @@
   font-weight: 700;
   font-size: 26px;
   color: #545454;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -289,7 +298,7 @@
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #545454;
 }
 
@@ -340,7 +349,8 @@
   background: #f2f2f2;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   background: $secondary-color;
   color: #fff;
 }
@@ -476,7 +486,8 @@
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -510,7 +521,7 @@
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -550,7 +561,8 @@
   font-size: 46px;
   color: $secondary-color;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   margin-bottom: 25px;
 }
 
@@ -599,7 +611,7 @@
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: 0.3s;
 }
 
@@ -749,7 +761,7 @@
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -782,13 +794,15 @@
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: $secondary-color;
 }
 
@@ -817,6 +831,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -826,6 +841,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -835,19 +851,22 @@
 # Blog
 --------------------------------------------------------------*/
 .blog {
-  padding-bottom: 30px;
+  padding: 80px 0px;
 }
 
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .blog .entry .entry-img {
   max-height: 400px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .blog .entry .entry-title {
@@ -879,7 +898,7 @@
   margin: 0;
 }
 
-.blog .entry .entry-meta ul li + li {
+.blog .entry .entry-meta ul li+li {
   padding-left: 20px;
 }
 
@@ -897,6 +916,7 @@
 
 .blog .entry .entry-content p {
   line-height: 24px;
+  color: $light_dark;
 }
 
 .blog .entry .entry-content .read-more {
@@ -1011,7 +1031,7 @@
   display: inline-block;
 }
 
-.blog .entry .entry-footer .tags li + li::before {
+.blog .entry .entry-footer .tags li+li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
@@ -1193,12 +1213,14 @@
   display: inline-block;
 }
 
-.blog .blog-pagination li.active, .blog .blog-pagination li:hover {
+.blog .blog-pagination li.active,
+.blog .blog-pagination li:hover {
   background: $secondary-color;
   border: 1px solid $secondary-color;
 }
 
-.blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
+.blog .blog-pagination li.active a,
+.blog .blog-pagination li:hover a {
   color: #fff;
 }
 
@@ -1271,7 +1293,7 @@
   padding: 0;
 }
 
-.blog .sidebar .categories ul li + li {
+.blog .sidebar .categories ul li+li {
   padding-top: 10px;
 }
 
@@ -1289,7 +1311,7 @@
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item + .post-item {
+.blog .sidebar .recent-posts .post-item+.post-item {
   margin-top: 15px;
 }
 
@@ -1355,4 +1377,20 @@
   padding-left: 5px;
   color: #ededed;
   font-size: 14px;
+}
+
+// Custom style
+.blog {
+
+  .entry-title {
+    color: $dark;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .entry-content {
+    color: $light_dark;
+    line-height: 28px;
+    font-size: 18px;
+  }
 }
