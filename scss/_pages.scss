@@ -31,9 +31,10 @@
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ededed;
-  padding: 80px 20px;
+  border: 1px solid #dedddd;
+  padding: 40px 25px;
   transition: all ease-in-out 0.3s;
+  border-radius:5px;
 }
 
 .services .icon-box .icon {
@@ -842,12 +843,14 @@
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .blog .entry .entry-img {
   max-height: 400px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+  border-radius:5px 5px 0 0;
 }
 
 .blog .entry .entry-title {
@@ -1355,4 +1358,26 @@
   padding-left: 5px;
   color: #ededed;
   font-size: 14px;
+}
+
+// comapny news box
+.hp-company-news {position: relative;
+  .glide__bullets{
+    position:absolute;
+    bottom:-20px;
+    .glide__bullet{
+      background:$secondary-color;
+    }
+  }
+}
+
+.featured .icon-box{
+  &:hover{
+    li a {color:white;}
+    
+    .glide__bullet{
+      border-color:white;
+      &.glide__bullet--active{background:white;}
+    }
+  }
 }

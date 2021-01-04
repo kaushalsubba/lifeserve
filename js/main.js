@@ -12,4 +12,13 @@ function scrollFunction() {
 
 
 
-new Glide('.glide').mount();
+var glideObj=document.querySelectorAll('.glide');
+for(i=0;i<=glideObj.length;i++){
+    if(glideObj[i]){
+        var autoPlay=false;
+        if(glideObj[i].getAttribute('data-autoplay'))
+            autoPlay=glideObj[i].getAttribute('data-autoplay');
+
+        new Glide(glideObj[i],{autoplay:autoPlay}).mount();
+    }
+}

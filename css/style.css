@@ -13528,6 +13528,7 @@ section.section-grey {
 }
 #hero .carousel-item > img {
   position: absolute;
+  opacity: 0.8;
   z-index: -1;
   width: 100%;
 }
@@ -13538,12 +13539,12 @@ section.section-grey {
 
 #hero .carousel-content {
   max-width: 700px;
-  background: rgba(221, 221, 221, 0.9);
-  -webkit-clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-clip-path: circle(78.9% at 80% 57%);
+          clip-path: circle(78.9% at 80% 57%);
   padding: 100px 250px 50px 150px;
   height: 100%;
-  color: #5f5f5f;
+  color: white;
   float: right;
 }
 
@@ -13604,9 +13605,10 @@ section.section-grey {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ededed;
-  padding: 80px 20px;
+  border: 1px solid #dedddd;
+  padding: 40px 25px;
   transition: all ease-in-out 0.3s;
+  border-radius: 5px;
 }
 
 .services .icon-box .icon {
@@ -14409,12 +14411,14 @@ section.section-grey {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .blog .entry .entry-img {
   max-height: 400px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+  border-radius: 5px 5px 0 0;
 }
 
 .blog .entry .entry-title {
@@ -14924,11 +14928,32 @@ section.section-grey {
   font-size: 14px;
 }
 
+.hp-company-news {
+  position: relative;
+}
+.hp-company-news .glide__bullets {
+  position: absolute;
+  bottom: -20px;
+}
+.hp-company-news .glide__bullets .glide__bullet {
+  background: #f18000;
+}
+
+.featured .icon-box:hover li a {
+  color: white;
+}
+.featured .icon-box:hover .glide__bullet {
+  border-color: white;
+}
+.featured .icon-box:hover .glide__bullet.glide__bullet--active {
+  background: white;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #404040;
+  background: #00a0e3;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -14971,14 +14996,14 @@ section.section-grey {
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background: #e96b56;
+  background: #00a0e3;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #e6573f;
+  background: #f18000;
 }
 
 #footer .footer-top {
@@ -15024,7 +15049,7 @@ section.section-grey {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #e96b56;
+  background: #f18000;
   color: #fff;
   text-decoration: none;
 }
@@ -15073,7 +15098,7 @@ section.section-grey {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #e96b56;
+  color: #f18000;
 }
 
 #footer .footer-top .footer-contact {
