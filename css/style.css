@@ -13501,8 +13501,8 @@ section.section-grey {
 
 #hero {
   width: 100%;
-  height: 70vh;
-  max-height: 600px;
+  height: 60vh;
+  min-height: 550px;
   background-color: black;
   overflow: hidden;
   padding: 0;
@@ -13518,8 +13518,8 @@ section.section-grey {
 #hero .carousel-item {
   width: 100%;
   max-width: 100%;
-  height: 70vh;
-  max-height: 600px;
+  height: 60vh;
+  min-height: 550px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13531,6 +13531,7 @@ section.section-grey {
   opacity: 0.8;
   z-index: -1;
   width: 100%;
+  min-height: 600px;
 }
 
 #hero .carousel-container {
